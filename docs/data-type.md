@@ -122,12 +122,12 @@ D语言中的数据类型可以分为值类型和引用类型。
 int a = 10;
 int b = a;    // 创建一个a的副本
 
-int[] array1 = [1, 2, 3];
-int[] array2 = array1;  // array2引用array1
+int[] list1 = [1, 2, 3];
+int[] list2 = list1;  // list2引用list1
 
 b = 20;            // a不受影响
-array2[0] = 10;    // array1也会被修改
+list2[0] = 10;    // list1也会被修改
 
 writeln(a); // 10
-writeln(array1[0]); // 10
+writeln(list1[0]); // 10
 ```
