@@ -166,7 +166,7 @@ for (int i = 0; i < 5; i++) {
 
 ### break和continue语句
 
-在循环中，可以使用break语句来提前退出循环，使用continue语句来跳过当前迭代，进入下一次迭代。
+在循环中，可以使用break语句来提前退出循环，使用continue语句来跳过本次循环，进入下一次循环。
 
 示例：
 
@@ -180,11 +180,14 @@ for (int i = 0; i < 5; i++) {
 
 for (int i = 0; i < 5; i++) {
     if (i == 3) {
-        continue; // 跳过当前迭代
+        continue; // 跳过当前循环
     }
     writeln(i);
 }
 ```
+
+break和continue后面可以加标签
+
 
 ### foreach循环
 
@@ -241,6 +244,17 @@ uint nextPrime(uint n) {
     }
 	return n;
 }
+```
+
+goto不能跳过目标标签所在作用域内变量的初始化，以下例子会导致编译错误
+```d
+if (condition)
+    goto label;
+
+auto s = S(42);
+
+label:
+    s.bar();
 ```
 
 ## 死循环
