@@ -12,7 +12,7 @@ D语言提供了一些基本数据类型，用于存储不同种类的数据。
 
 - 布尔类型：`bool`，默认值为`false`
 - 整数类型：`byte`、`ubyte`、`short`、`ushort`、`int`、`uint`、`long`、`ulong`，默认值为0
-- 浮点数类型：`float`、`double`、`real`，默认值为NaN
+- 浮点数类型：`float`、`double`、`real`，默认值为`NaN`
 - 字符类型：`char`、`wchar`、`dchar`，默认值分别为'\xFF'、'\uFFFF'、'\U0000FFFF'
 
 ### 派生数据类型
